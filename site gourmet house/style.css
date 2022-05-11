@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    font-family: trebuchet ms, sans-serif;
+    background-color: #dddddd;
+    
+}
+
+.container{
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+   
+}
+
+.coluna-principal{
+    width: 45%; 
+    text-align: center;
+    
+}
+
+.coluna{
+    width: 22%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.coluna-principal img, .coluna img{
+    width: 100%;
+}
+
+h1{
+    margin 0 0 10px 0;
+    color: #8c0000;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'KillTheLights';
+}
+
+
+
+h2{
+    margin 0 0 10px 0;
+    color: #8c0000;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'KillTheLights';
+}
+
+p{
+    color: #888888;
+}
+
+.botao{
+    color: #888888;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: inline-block;
+    transition: 0.5s;
+    
+}
+
+.botao:hover{
+    background-color: #400202;
+    color: white;
+}
+
+#topo{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(64, 2, 2, 0.60);
+    z-index: 10;
+    
+}
+
+#logo{
+    margin: 20px 0; 
+    
+}
+
+#btn-menu{
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 40px;
+}
+
+.barra{
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin-bottom: 3px;
+    transition: 0.5s;
+}
+
+.x .barra:nth-child(2){
+    opacity: 0;
+}
+
+.x .barra:nth-child(1){
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.x .barra:nth-child(3){
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+#menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #400202;
+}
+
+#menu ul li {
+    display: inline;
+    position: relative;
+}
+
+#menu ul li:hover ul{
+    display: block;
+}
+
+#menu ul li ul{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    padding-top: 10px;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+#menu ul li ul li{
+    display: block;
+    padding: 5px;
+}
+
+#menu{
+    background-color: #400202;
+    padding: 10px 0;
+}
+
+#menu a{
+    color: #ffffff;
+    font-family: 'KillTheLights';
+    text-decoration: none;
+    margin-right: 25px;
+    margin-left: 25px;
+        
+}
+
+#menu a:hover{
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    color: #888888;
+    border-color: #888888;
+    
+}
+
+#banner img{
+    width: 100%;
+}
+
+.linha{
+    text-align: center;
+    margin: 40px 0;
+}
+
+#depoimento{
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px 0;
+    background-color: #d2d2d2;
+    text-align: center;        
+}
+
+#rodape{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+
+@media screen and (max-width:800px){
+
+    #menu a{
+    margin-left:20px;
+    margin-right: 20px;
+    }
+ 
+    .coluna{
+        width: 45%;        
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    
+    #btn-menu{
+        display: block;
+    }
+    
+    #menu{
+        display: none;
+    } 
+    
+    #menu a:hover{
+        border-top: none;
+        
+    }
+    
+    #menu a{
+        display: block;
+        border-bottom: 1px solid #888888;
+        padding: 10px 0;
+    }
+    
+   
+    #menu ul li ul{
+        position: static;
+        background-color: rgba(255, 0, 0, 0.2);
+        
+    }
+    
+    #menu ul li ul li{
+        /*display: none;*/
+        
+        
+    }
+    
+    .coluna-principal, .coluna{
+        width: 100%;
+        text-align: left;
+    }
+    .coluna-principal img{
+        width: 40%;
+        float: left;
+        margin: 10px 10px 0 0;
+    }
+    #topo{
+        background-color: #400202;
+    }
+}
+
+@media screen and (max-width:375px){
+    
+    #logo img{
+        width: 200px;
+    }
+    
+    #btn-menu{
+        top: 30px;
+    }
+    
+    .coluna-principal img, .coluna img{
+        width: 100%;
+    }
+}
+
+

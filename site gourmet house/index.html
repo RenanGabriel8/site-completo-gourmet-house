@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="initial-scale=1"><!--faz com que os navegadores de celular reconheçam a escala de pixels do site-->
+    
+    <title>Gourmet-House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="KillTheLights.css">
+    <link rel="stylesheet" href="nivo-slider/nivo-slider.css">    
+	
+<script src="nivo-slider/jquery-1.11.1.min.js"></script>
+<script src="nivo-slider/jquery.nivo.slider.js"></script>
+
+<script>
+		
+	$(window).load(function() {
+            
+		$('#banner').nivoSlider();
+        
+        $("#btn-menu").click(function(){
+            
+            $("#menu").slideToggle();
+            
+            $("#btn-menu").toggleClass("x",""); //add ou remove a classe "x"
+		
+        });
+        
+    });
+		
+</script>
+
+</head>
+<body>
+  
+   <header id="topo">
+       <div id="logo">
+           <img src="img/logo.png" alt="">
+       </div>
+       
+       <div id="btn-menu">
+           <div class="barra"></div>
+           <div class="barra"></div>
+           <div class="barra"></div>        
+       </div>
+       
+       <nav id="menu">
+          <ul>
+               <li><a href="#">HOME</a></li>
+               <li><a href="#">QUEM SOMOS</a></li>
+               
+               <li><a href="#">CARDÁPIO</a>
+                   <ul>
+                       <li><a href="">MASSAS</a></li>
+                       <li><a href="">PEIXES</a></li>
+                       <li><a href="">BEBIDAS</a></li>                       
+                   </ul>
+               
+               </li>
+               <li><a href="#">O ESPAÇO</a></li>
+               <li><a href="#">LOCALIZAÇÃO</a></li>
+               <li><a href="#">CONTATO</a></li>
+           </ul>
+       </nav>
+                   
+   </header>
+   
+   <div id="banner">
+       <img src="img/banner1.jpg" alt="">
+       <img src="img/banner2.jpg" alt="">
+       <img src="img/banner3.jpg" alt="">
+       
+   </div>
+   
+   <div class="container">
+      
+      <div class="container-flex">
+       <article class="coluna-principal">
+          
+           <h1>Conheça nossa Carta de Vinhos</h1>
+           <img src="img/img-vinho.jpg" alt="">
+           <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit. Vestibulum elem entum tincidunt ligula ultrices dapibus. In ac elit vel enim ornare elementum a nec orci  metus tempus..</p>
+           <p>As maecenas libero tellus, convallis quis turpis a, fermentum asclast dictum purus. Ut sed rhoncus ex, quis gravida justo. Pellentesque pretium metus mi, et venenatis metus tempu.</p>
+           <a href="#" class="botao">Saiba mais</a>
+           
+       </article>
+       
+   
+       <article class="coluna-principal">
+                    
+           <h1>Por trás do Sabor</h1>
+           <img src="img/img-sabor.jpg" alt="">
+           <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit. Vestibulum elem entum tincidunt ligula ultrices dapibus. In ac elit vel enim ornare elementum a nec orci  metus tempus..</p>
+           <p>As maecenas libero tellus, convallis quis turpis a, fermentum asclast dictum purus. Ut sed rhoncus ex, quis gravida justo. Pellentesque pretium metus mi, et venenatis metus tempu.</p>
+           <a href="#" class="botao">Saiba mais</a>
+           
+       </article>
+                
+      
+   </div>
+       
+        <div class="linha">
+            <img src="img/linha-decorativa.png" alt="">
+        </div>
+           
+           
+     <div class="container-flex">         
+     
+            <section class="coluna">
+                <h2>Nossos cozinheiros</h2>
+                <img src="img/img-cozinheiros.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet innc, consectetur adipiscing elit. Nulla semper, sem eget blandit auctor, am libero dapibus erat, aullam uccorper nisi quam sed donec auctor cursus tortor ettius last.</p>
+                <a href="#" class="botao">Saiba mais</a>
+            </section>
+            
+            <section class="coluna">
+                <h2>Happy Hour</h2>
+                <img src="img/img-happy-hour.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet innc, consectetur adipiscing elit. Nulla semper, sem eget blandit auctor, am libero dapibus erat, aullam uccorper nisi quam sed donec auctor cursus tortor ettius last.</p>
+                <a href="#" class="botao">Saiba mais</a>
+            </section>
+            
+            <section class="coluna">
+                <h2>A melhor Pizza</h2>
+                <img src="img/img-pizza.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet innc, consectetur adipiscing elit. Nulla semper, sem eget blandit auctor, am libero dapibus erat, aullam uccorper nisi quam sed donec auctor cursus tortor ettius last.</p>
+                <a href="#" class="botao">Saiba mais</a>
+            </section>
+            
+            <section class="coluna">
+                <h2>Faça sua reserva</h2>
+                <img src="img/img-reserva.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet innc, consectetur adipiscing elit. Nulla semper, sem eget blandit auctor, am libero dapibus erat, aullam uccorper nisi quam sed donec auctor cursus tortor ettius last.</p>
+                <a href="#" class="botao">Saiba mais</a>
+            </section>                                                                                                                        
+     </div>       
+                               
+    </div>
+       
+            <div id="depoimento">
+                <div class="container">
+                 <img src="img/perfil.png" alt="">
+                 <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</em></p>
+                 <p>Sérgio Brandão</p>
+                 </div>
+            </div>
+    
+    <footer id="rodape">
+        GOURMET HOUSE  TODOS OS DIREITOS RESERVADOS<br>
+        AVENIDA VIEIRA SOUTO 185 - IPANEMA - RIO DE JANEIRO - RJ(ENDEREÇO FICTÍCIO)<br>
+		DESENVOLVIDO POR: RENAN GABRIEL
+    </footer>        
+ 
+       
+</body>
+</html>
